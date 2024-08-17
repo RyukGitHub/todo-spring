@@ -14,4 +14,4 @@ COPY target/ToDoList-0.0.1-SNAPSHOT.jar $APP_HOME/ToDoList-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
 
 # Running appliaction
-ENTRYPOINT ["java", "-jar", "ToDoList-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/backend/ToDoList-0.0.1-SNAPSHOT.jar"]
