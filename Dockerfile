@@ -8,10 +8,10 @@ ENV APP_HOME=/app/backend
 WORKDIR $APP_HOME
 
 # Copying jar file from local to container
-COPY target/ToDoList-0.0.1-SNAPSHOT.jar ToDoList-0.0.1-SNAPSHOT.jar
+COPY target/ToDoList-0.0.1-SNAPSHOT.jar /app/backend/ToDoList-0.0.1-SNAPSHOT.jar
 
 # PORT
 EXPOSE 8080
 
 # Running appliaction
-ENTRYPOINT ["java", "-jar", "ToDoList-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/backend/ToDoList-0.0.1-SNAPSHOT.jar"]
